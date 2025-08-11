@@ -10,4 +10,5 @@ Because light attracts bugs! 🐛💡
 
 ---
 
+**Author:** Kathir  
 *This joke was added by Codegen as requested in ClickUp task #86czxu7gr*
