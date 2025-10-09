@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 1rem;
+            font-size: 18px;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Hello World Program</h1>
+        <button onclick="showHelloWorld()">Click to Say Hello!</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        // Function to display "Hello, World!" message
+        function showHelloWorld() {
+            const output = document.getElementById('output');
+            output.textContent = "Hello, World!";
+            
+            // Also log to console
+            console.log("Hello, World!");
+        }
+
+        // Automatically show the message when page loads
+        window.onload = function() {
+            console.log("Hello, World! (Page loaded)");
+        };
+    </script>
+</body>
+</html>
