@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Hello World Program</h1>
+    <p>Open the browser's developer console (F12) to see the output!</p>
+    
+    <button onclick="showAlert()">Click me for Hello World alert!</button>
+    
+    <div id="output"></div>
+
+    <script>
+        // Simple "Hello World" program in JavaScript
+        console.log("Hello, World!");
+
+        // Function to display Hello World
+        function sayHello() {
+            return "Hello, World!";
+        }
+
+        // Display in console
+        console.log(sayHello());
+
+        // Function for button click
+        function showAlert() {
+            alert("Hello, World!");
+            document.getElementById('output').innerHTML = '<p style="color: green; font-size: 18px;">Hello, World!</p>';
+        }
+
+        // Display on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('output').innerHTML = '<p style="color: blue; font-size: 16px;">Page loaded! Check the console for Hello World messages.</p>';
+        });
+    </script>
+</body>
+</html>
